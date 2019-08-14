@@ -26,7 +26,7 @@ class Homepage extends Component {
     const half = this.state.height / 2;
     console.log(this.state);
     return (
-      <div className='homepage-wrapper'>
+      <div className='homepage-wrapper' >
         <div style={{ background: '#000', position: 'fixed', left: 0, bottom: 0, width: '100vw', height: '50vh' }} />
         <div style={{ height: '100vh', position: 'relative' }}>
           <div style={{ height: '50%', display: 'flex', }}>
