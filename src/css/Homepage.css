@@ -22,22 +22,17 @@
   /* filter: hue-rotate(90deg); */
 }
 
+
 .title-name {
   font-family: 'tex_gyre_herosbold', sans-serif;
   font-size: 10vw;
   color: #F6BDD1;
   mix-blend-mode: difference;
-}
-
-.title-name > span {
-  mix-blend-mode: difference;
+  align-self: flex-end;
 }
 
 .text-container {
-  position: absolute;
   text-align: left;
-  left: 0;
-  top: 100%;
 }
 
 .homepage-text {
@@ -58,18 +53,6 @@
   /* mix-blend-mode: difference; */
   background-blend-mode: exclusion;
   overflow: hidden;
-}
-
-.corner-bottom-right {
-  position: absolute;
-  border-left: 80vw solid transparent;
-  border-bottom: 80vh solid #F6BDD1;
-}
-
-.corner-top-left {
-  position: absolute;
-  border-right: 30vw solid transparent;
-  border-bottom: 80vh solid #F6BDD1;
 }
 
 .gradient-pink {
