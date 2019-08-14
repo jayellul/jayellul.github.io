@@ -29,6 +29,7 @@
   color: #F6BDD1;
   mix-blend-mode: difference;
   align-self: flex-end;
+  line-height: 1;
 }
 
 .text-container {
