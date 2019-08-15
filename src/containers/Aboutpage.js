@@ -52,7 +52,7 @@ class Aboutpage extends Component {
         <div className='project-wrapper'>
           <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
           <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-          <div className='project-text-wrapper rellax0-5'>
+          <div className='project-text-wrapper rellax1'>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
                 Other users can then comment on or announce that they are going to the posts.</p>
