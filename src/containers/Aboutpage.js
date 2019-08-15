@@ -11,37 +11,47 @@ import appstore from '../img/appstore.png';
 
 import motivemap from '../img/motive-map.png';
 import motiveprofile from '../img/motive-profile.png';
+
 class Aboutpage extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { white: false };
+    this.state = { white: false, motive: false };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', () => this.handleScroll());
+    window.addEventListener('scroll', (e) => this.handleScroll(e));
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', () => this.handleScroll());
+    window.removeEventListener('scroll', (e) => this.handleScroll(e));
   }
 
-  handleScroll(event) {
+  handleScroll(e) {
     if (!this.state.white && (window.scrollY > window.innerHeight / 2)) {
       this.setState({ white: true });
     } else if (this.state.white && (window.scrollY <= window.innerHeight / 2)) {
       this.setState({ white: false });
     }
+    console.log(window.scrollY, window.innerHeight, window.scrollY / window.innerHeight);
+    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.7 && window.scrollY / window.innerHeight <= 1.5)) {
+      this.setState({ motive: true });
+    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.7 || window.scrollY / window.innerHeight > 1.5)) {
+      this.setState({ motive: false });
+    }
   }
 
   render() {
-    const { white } = this.state;
+    const { white, motive } = this.state;
+    console.log('rerender');
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <p className='aboutpage-text rellax-1'>Recent Works</p>
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
+          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
+          <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
           <div className='project-text-wrapper'>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
@@ -56,6 +66,9 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className='project-wrapper'>
+
         </div>
       </div>
     )
