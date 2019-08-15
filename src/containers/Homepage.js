@@ -12,6 +12,7 @@ class Homepage extends Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
+    // Add Rellax to components
     new Rellax('.rellax-1', { speed: -0.5, });
     new Rellax('.rellax-2', { speed: -1.0, });
     new Rellax('.rellax-3', { speed: -1.5, });

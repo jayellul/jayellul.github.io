@@ -3,20 +3,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   z-index: 1;
-  transition: background-color 0.5s ease;
-  
+  transition: background-color 0.5s ease; 
+  padding: 0 5vw;
+  color: #000;
 }
 
 .aboutpage-text {
   font-family: 'tex_gyre_herosbold', sans-serif;
-  color: #000;
   font-size: 1.52em;
+  text-align: left;
 }
-
 
 .pic-selfie {
   position: sticky;
@@ -28,4 +25,39 @@
   /* mix-blend-mode: difference; */
   background-blend-mode: exclusion;
   overflow: hidden;
+}
+
+.project-wrapper {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.project-text-wrapper {
+  max-width: 620px;
+}
+
+.project-title {
+  font-family: 'tex_gyre_herosbold', sans-serif;
+  font-size: 2.52em;
+  background: linear-gradient(270deg, #12c2e9, #c471ed,#f64f59, #F2994A, #F2C94C);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 15s ease infinite;
+  text-align: left;
+}
+
+.project-text { 
+  font-family: 'tex_gyre_heros', sans-serif;
+  color: #4c4d4c;
+  font-size: 1.02em;
+  text-align: left;
+}
+
+@keyframes animate-gradient { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }

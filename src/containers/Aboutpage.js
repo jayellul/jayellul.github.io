@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Rellax from 'rellax';
 
 
 import '../css/Aboutpage.css';
@@ -33,9 +34,15 @@ class Aboutpage extends Component {
     console.log(white);
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
-        <p className='aboutpage-text'>Hello</p>
+        <p className='aboutpage-text rellax-1'>Recent Works</p>
         {/* <img className='pic-selfie' src={me}></img> */}
-
+        <div className='project-wrapper'>
+          <div className='project-text-wrapper'>
+            <p className='project-title'>Motive</p>
+            <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
+                Other users can then comment on or announce that they are going to the posts.</p>
+          </div>
+        </div>
       </div>
     )
   }
