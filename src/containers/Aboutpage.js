@@ -34,9 +34,9 @@ class Aboutpage extends Component {
       this.setState({ white: false });
     }
     console.log(window.scrollY, window.innerHeight, window.scrollY / window.innerHeight);
-    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.5 && window.scrollY / window.innerHeight <= 1.6)) {
+    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.9 && window.scrollY / window.innerHeight <= 1.5)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.5 || window.scrollY / window.innerHeight > 1.6)) {
+    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.9 || window.scrollY / window.innerHeight > 1.5)) {
       this.setState({ motive: false });
     }
   }
@@ -56,7 +56,7 @@ class Aboutpage extends Component {
             <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
           </div>
-          <div className='project-text-wrapper'>
+          <div className='project-text-wrapper' >
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
                 Other users can then comment on or announce that they are going to the posts.</p>
@@ -70,11 +70,11 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div >
         <div className='project-wrapper'>
 
         </div>
-      </div>
+      </div >
     )
   }
 }

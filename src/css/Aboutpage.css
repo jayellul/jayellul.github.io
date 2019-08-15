@@ -11,7 +11,6 @@
 .aboutpage-text-wrapper {
   position: sticky;
   top: 0;
-  left: 0;
   background-color: #000;
   z-index: 5;
   padding: 10px 5vw;
@@ -67,28 +66,30 @@
 }
 
 .motive-pic-wrapper {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   right: 0;
+  width: 30%;
+  height: 90%;
 }
 
 .motive-pic-1 {
-  position: relative;
-  right: 15%;
+  position: absolute;
+  right: 50%;
   bottom: 0;
   height: 100%;
-  width: 30%;
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition-delay: 0.3s;
-  /* overflow: hidden; */
+  transition-delay: 0.2s;
+  overflow: hidden;
 }
 .motive-pic-2 {
   position: absolute;
   right: 0;
   bottom: 0;
   height: 100%;
-  width: 30%;
+  width: 100%;
   background-size: contain;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   overflow: hidden;

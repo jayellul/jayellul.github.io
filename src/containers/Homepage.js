@@ -20,6 +20,8 @@ class Homepage extends Component {
     new Rellax('.rellax-1', { speed: -1.0, });
     new Rellax('.rellax-1-5', { speed: -1.5, });
     new Rellax('.rellax-3', { speed: -3, });
+    new Rellax('.rellax-4', { speed: -4, });
+    new Rellax('.rellax-5', { speed: -5, });
     window.addEventListener('resize', this.updateWindowDimensions);
   }
 
