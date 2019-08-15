@@ -13,6 +13,11 @@
   font-family: 'tex_gyre_herosbold', sans-serif;
   font-size: 1.52em;
   text-align: left;
+  background: linear-gradient(270deg, #12c2e9, #c471ed,#f64f59, #F2994A, #F2C94C);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 15s ease infinite;
 }
 
 .pic-selfie {
@@ -41,11 +46,6 @@
 .project-title {
   font-family: 'tex_gyre_herosbold', sans-serif;
   font-size: 2.52em;
-  background: linear-gradient(270deg, #12c2e9, #c471ed,#f64f59, #F2994A, #F2C94C);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate-gradient 15s ease infinite;
   text-align: left;
 }
 
