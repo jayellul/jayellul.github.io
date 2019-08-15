@@ -46,9 +46,9 @@ class Aboutpage extends Component {
     } else if (this.state.motive && (scrollHeightRatio < 0.75 || scrollHeightRatio > 1.25)) {
       this.setState({ motive: false });
     }
-    if (!this.state.securcor && (scrollHeightRatio >= 1.5 && scrollHeightRatio <= 2.25)) {
+    if (!this.state.securcor && (scrollHeightRatio >= 1.55 && scrollHeightRatio <= 2.25)) {
       this.setState({ securcor: true });
-    } else if (this.state.securcor && (scrollHeightRatio < 1.5 || scrollHeightRatio > 2.25)) {
+    } else if (this.state.securcor && (scrollHeightRatio < 1.55 || scrollHeightRatio > 2.25)) {
       this.setState({ securcor: false });
     }
   }
@@ -85,23 +85,22 @@ class Aboutpage extends Component {
         </div>
         {/* Securcor */}
         <div className='project-wrapper'>
+          <div className='securcor-pic-1' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
           <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Securcor</p>
-            <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
+            <p className='project-text'>Designed and implemented the external website for Securcor Financial Group. </p>
             {/* Securcor access buttons */}
             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 26 }}>
               <div onClick={() => window.open("https://securcor.com", "_blank")} className='button-primary'>
-                <p>View Online</p>
+                <p>Visit Site</p>
               </div>
               <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
                 <p>Read More</p>
               </div>
             </div>
           </div>
-          <div className='motive-pic-wrapper'>
-            <div className='motive-pic-2' style={{ backgroundImage: `url(${securcorhome})`, backgroundPosition: securcor ? 'center bottom' : 'center 100vh', opacity: securcor ? 1 : 0 }} />
-            <div className='motive-pic-1' style={{ backgroundImage: `url(${securcormission})`, backgroundPosition: securcor ? 'center bottom' : 'center 100vh', opacity: securcor ? 1 : 0 }} />
-          </div>
+          {/* Pictures of design */}
+          <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcorhome})`, opacity: securcor ? 1 : 0 }} />
         </div>
       </div >
     )
