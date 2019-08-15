@@ -12,11 +12,14 @@ import appstore from '../img/appstore.png';
 import motivemap from '../img/motive-map.png';
 import motiveprofile from '../img/motive-profile.png';
 
+import securcorhome from '../img/securcor-home.jpg';
+import securcormission from '../img/securcor-mission.jpg';
+
 class Aboutpage extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { white: false, motive: false };
+    this.state = { white: false, motive: false, securcor: false };
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -29,21 +32,29 @@ class Aboutpage extends Component {
   }
 
   handleScroll(e) {
+    // If offset is in component
     if (!this.state.white && (window.scrollY > window.innerHeight / 2)) {
       this.setState({ white: true });
     } else if (this.state.white && (window.scrollY <= window.innerHeight / 2)) {
       this.setState({ white: false });
     }
-    console.log(window.scrollY, window.innerHeight, window.scrollY / window.innerHeight);
-    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.75 && window.scrollY / window.innerHeight <= 1.25)) {
+    const scrollHeightRatio = window.scrollY / window.innerHeight;
+    // If is in Motive section
+    console.log(scrollHeightRatio);
+    if (!this.state.motive && (scrollHeightRatio >= 0.75 && scrollHeightRatio <= 1.25)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.75 || window.scrollY / window.innerHeight > 1.25)) {
+    } else if (this.state.motive && (scrollHeightRatio < 0.75 || scrollHeightRatio > 1.25)) {
       this.setState({ motive: false });
+    }
+    if (!this.state.securcor && (scrollHeightRatio >= 1.5 && scrollHeightRatio <= 2.25)) {
+      this.setState({ securcor: true });
+    } else if (this.state.securcor && (scrollHeightRatio < 1.5 || scrollHeightRatio > 2.25)) {
+      this.setState({ securcor: false });
     }
   }
 
   render() {
-    const { white, motive } = this.state;
+    const { white, motive, securcor } = this.state;
     console.log('rerender');
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
@@ -53,10 +64,6 @@ class Aboutpage extends Component {
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
-          <div className='motive-pic-wrapper'>
-            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-            <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-          </div>
           <div className='project-text-wrapper' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
@@ -71,9 +78,30 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
-        </div >
+          <div className='motive-pic-wrapper'>
+            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+            <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+          </div>
+        </div>
+        {/* Securcor */}
         <div className='project-wrapper'>
-
+          <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
+            <p className='project-title'>Securcor</p>
+            <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
+            {/* Securcor access buttons */}
+            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 26 }}>
+              <div onClick={() => window.open("https://securcor.com", "_blank")} className='button-primary'>
+                <p>View Online</p>
+              </div>
+              <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
+                <p>Read More</p>
+              </div>
+            </div>
+          </div>
+          <div className='motive-pic-wrapper'>
+            <div className='motive-pic-2' style={{ backgroundImage: `url(${securcorhome})`, backgroundPosition: securcor ? 'center bottom' : 'center 100vh', opacity: securcor ? 1 : 0 }} />
+            <div className='motive-pic-1' style={{ backgroundImage: `url(${securcormission})`, backgroundPosition: securcor ? 'center bottom' : 'center 100vh', opacity: securcor ? 1 : 0 }} />
+          </div>
         </div>
       </div >
     )
