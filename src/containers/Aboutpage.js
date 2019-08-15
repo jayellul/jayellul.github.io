@@ -46,9 +46,9 @@ class Aboutpage extends Component {
     } else if (this.state.motive && (scrollHeightRatio < 0.75 || scrollHeightRatio > 1.25)) {
       this.setState({ motive: false });
     }
-    if (!this.state.securcor && (scrollHeightRatio >= 1.55 && scrollHeightRatio <= 2.25)) {
+    if (!this.state.securcor && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
       this.setState({ securcor: true });
-    } else if (this.state.securcor && (scrollHeightRatio < 1.55 || scrollHeightRatio > 2.25)) {
+    } else if (this.state.securcor && (scrollHeightRatio < 1.75 || scrollHeightRatio > 2.25)) {
       this.setState({ securcor: false });
     }
   }
