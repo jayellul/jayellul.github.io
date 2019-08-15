@@ -64,6 +64,7 @@
   color: #4c4d4c;
   font-size: 1.02em;
   text-align: left;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 /* TODO: REMAKE screenshots with full phone - have it scroll down like normally */

@@ -17,14 +17,15 @@ class Aboutpage extends Component {
   constructor(props) {
     super(props);
     this.state = { white: false, motive: false };
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', (e) => this.handleScroll(e));
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', (e) => this.handleScroll(e));
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll(e) {
