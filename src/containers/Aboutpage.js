@@ -35,6 +35,7 @@ class Aboutpage extends Component {
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <p className='aboutpage-text'>Hello</p>
         {/* <img className='pic-selfie' src={me}></img> */}
+
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Rellax from 'rellax';
 import '../css/Homepage.css';
 
 class Homepage extends Component {
@@ -11,6 +12,10 @@ class Homepage extends Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
+    new Rellax('.rellax-2', { speed: -2, });
+    new Rellax('.rellax-3', { speed: -3, });
+    new Rellax('.rellax-4', { speed: -4, });
+
     window.addEventListener('resize', this.updateWindowDimensions);
   }
 
@@ -34,9 +39,9 @@ class Homepage extends Component {
           </div>
           <div style={{ height: '50%', display: 'flex' }}>
             <div className='text-container'>
-              <p className='homepage-text'>User interface designer.</p>
-              <p className='homepage-text'>Full stack mobile &amp; web developer.</p>
-              <p className='homepage-text'>SoundCloud rapper.</p>
+              <p className='rellax-2 homepage-text'>User interface designer.</p>
+              <p className='rellax-3 homepage-text'>Full stack mobile &amp; web developer.</p>
+              <p className='rellax-4 homepage-text'>SoundCloud rapper.</p>
             </div>
           </div>
         </div>
