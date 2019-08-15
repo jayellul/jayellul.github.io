@@ -9,6 +9,8 @@ import me from '../img/me.png';
 import github from '../img/github.png';
 import appstore from '../img/appstore.png';
 
+import motivemap from '../img/motive-map.png';
+import motiveprofile from '../img/motive-profile.png';
 class Aboutpage extends Component {
 
   constructor(props) {
@@ -34,7 +36,6 @@ class Aboutpage extends Component {
 
   render() {
     const { white } = this.state;
-    console.log(white);
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <p className='aboutpage-text rellax-1'>Recent Works</p>
