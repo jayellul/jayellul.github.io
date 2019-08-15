@@ -5,19 +5,28 @@
   flex-direction: column;
   z-index: 1;
   transition: background-color 0.5s ease; 
-  padding: 0 5vw;
   color: #000;
+}
+
+.aboutpage-text-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 5;
+  padding: 10px 5vw;
 }
 
 .aboutpage-text {
   font-family: 'tex_gyre_herosbold', sans-serif;
   font-size: 1.52em;
   text-align: left;
-  background: linear-gradient(270deg, #12c2e9, #c471ed,#f64f59, #F2994A, #F2C94C);
+  /* background: linear-gradient(270deg, #12c2e9, #c471ed,#f64f59, #F2994A, #F2C94C);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate-gradient 5s ease infinite;
+  animation: animate-gradient 5s ease infinite; */
+  color: #F6BDD1;
 }
 
 .pic-selfie {
@@ -37,7 +46,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin: 5vw 0;
+  margin: 0 5vw;
 }
 
 .project-text-wrapper {
@@ -57,16 +66,22 @@
   text-align: left;
 }
 
+.motive-pic-wrapper {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+}
+
 .motive-pic-1 {
-  position: absolute;
+  position: relative;
   right: 15%;
   bottom: 0;
   height: 100%;
   width: 30%;
-  background-size: contain;
+  background-size: cover;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition-delay: 0.3s;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .motive-pic-2 {
   position: absolute;
