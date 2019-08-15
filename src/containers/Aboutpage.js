@@ -34,9 +34,9 @@ class Aboutpage extends Component {
       this.setState({ white: false });
     }
     console.log(window.scrollY, window.innerHeight, window.scrollY / window.innerHeight);
-    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.65 && window.scrollY / window.innerHeight <= 1.35)) {
+    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.65 && window.scrollY / window.innerHeight <= 1.2)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.65 || window.scrollY / window.innerHeight > 1.35)) {
+    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.65 || window.scrollY / window.innerHeight > 1.2)) {
       this.setState({ motive: false });
     }
   }
@@ -50,9 +50,9 @@ class Aboutpage extends Component {
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
-          <div className='motive-pic-2 rellax-3' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
-          <div className='motive-pic-1 rellax-3' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
-          <div className='project-text-wrapper'>
+          <div className='motive-pic-2 rellax-1-5' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
+          <div className='motive-pic-1 rellax-1-5' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
+          <div className='project-text-wrapper rellax1'>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
                 Other users can then comment on or announce that they are going to the posts.</p>
