@@ -34,9 +34,9 @@ class Aboutpage extends Component {
       this.setState({ white: false });
     }
     console.log(window.scrollY, window.innerHeight, window.scrollY / window.innerHeight);
-    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.7 && window.scrollY / window.innerHeight <= 1.5)) {
+    if (!this.state.motive && (window.scrollY / window.innerHeight >= 0.65 && window.scrollY / window.innerHeight <= 1.35)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.7 || window.scrollY / window.innerHeight > 1.5)) {
+    } else if (this.state.motive && (window.scrollY / window.innerHeight < 0.65 || window.scrollY / window.innerHeight > 1.35)) {
       this.setState({ motive: false });
     }
   }
@@ -46,12 +46,12 @@ class Aboutpage extends Component {
     console.log('rerender');
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
-        <p className='aboutpage-text rellax-1'>Recent Works</p>
+        <p className='aboutpage-text rellax-0-5'>Recent Works</p>
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
-          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
-          <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
+          <div className='motive-pic-2 rellax-3' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
+          <div className='motive-pic-1 rellax-3' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh' }} />
           <div className='project-text-wrapper'>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
