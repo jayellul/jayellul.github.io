@@ -65,6 +65,7 @@
   width: 30%;
   background-size: contain;
   transition: background-position 0.67s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-delay: 0.3s;
 }
 .motive-pic-2 {
   position: absolute;
@@ -74,7 +75,6 @@
   width: 30%;
   background-size: contain;
   transition: background-position 0.67s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition-delay: 0.3s;
 }
 
 
