@@ -12,9 +12,9 @@ class Homepage extends Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    new Rellax('.rellax-2', { speed: -2, });
-    new Rellax('.rellax-3', { speed: -3, });
-    new Rellax('.rellax-4', { speed: -4, });
+    new Rellax('.rellax-1', { speed: -0.5, });
+    new Rellax('.rellax-2', { speed: -1.0, });
+    new Rellax('.rellax-3', { speed: -1.5, });
 
     window.addEventListener('resize', this.updateWindowDimensions);
   }
@@ -39,9 +39,9 @@ class Homepage extends Component {
           </div>
           <div style={{ height: '50%', display: 'flex' }}>
             <div className='text-container'>
-              <p className='rellax-2 homepage-text'>User interface designer.</p>
-              <p className='rellax-3 homepage-text'>Full stack mobile &amp; web developer.</p>
-              <p className='rellax-4 homepage-text'>SoundCloud rapper.</p>
+              <p className='rellax-1 homepage-text'>User interface designer.</p>
+              <p className='rellax-2 homepage-text'>Full stack mobile &amp; web developer.</p>
+              <p className='rellax-3 homepage-text'>SoundCloud rapper.</p>
             </div>
           </div>
         </div>
