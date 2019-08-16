@@ -69,7 +69,7 @@ class Aboutpage extends Component {
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <div className='aboutpage-text-wrapper'>
           <p className='aboutpage-text' style={{ color: white ? '#fff' : '#000' }}>Recent Works</p>
-          <a className='aboutpage-contact' style={{ color: white ? '#fff' : '#000' }}>Contact Me</a>
+          <a href='mailto:jason.j.ellul@gmail.com' className='aboutpage-contact' style={{ color: white ? '#fff' : '#000' }}>Contact Me</a>
         </div>
         {/* <img className='pic-selfie' src={me}></img> */}
         <div style={{ padding: '0 5vw', overflow: 'hidden' }}>
