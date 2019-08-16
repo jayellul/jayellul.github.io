@@ -17,7 +17,7 @@ import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
 
 import securcorhome from '../img/securcor-home.jpg';
-import securcormission from '../img/securcor-mission.jpg';
+import securcormission from '../img/securcor-mission-laptop.png';
 
 class Aboutpage extends Component {
 
