@@ -41,9 +41,9 @@ class Aboutpage extends Component {
     const scrollHeightRatio = window.scrollY / window.innerHeight;
     // If is in Motive section
     console.log(scrollHeightRatio);
-    if (!this.state.motive && (scrollHeightRatio >= 0.75 && scrollHeightRatio <= 1.25)) {
+    if (!this.state.motive && (scrollHeightRatio >= 0.85 && scrollHeightRatio <= 1.35)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (scrollHeightRatio < 0.75 || scrollHeightRatio > 1.25)) {
+    } else if (this.state.motive && (scrollHeightRatio < 0.85 || scrollHeightRatio > 1.35)) {
       this.setState({ motive: false });
     }
     if (!this.state.securcor && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
@@ -86,8 +86,8 @@ class Aboutpage extends Component {
         {/* Securcor */}
         <div className='project-wrapper'>
           <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
-            <p className='project-title'>Securcor</p>
-            <p className='project-text'>Designed and implemented the external website for Securcor Financial Group. </p>
+            <p className='project-title'>Securcor.com</p>
+            <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
             {/* Securcor access buttons */}
             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
               <div onClick={() => window.open("https://securcor.com", "_blank")} className='button-primary'>
