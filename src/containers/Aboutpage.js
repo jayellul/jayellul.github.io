@@ -96,11 +96,11 @@ class Aboutpage extends Component {
           <div className='motive-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
           <div className='project-text-wrapper rellax2' style={{ opacity: tidy ? 1 : 0, WebkitFilter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Tidy</p>
-            <p className='project-text'>Tidy is an app I created to keep track of chores around the house. You can also send your housemates push notifications to remind them to do their assigned chores.</p>
+            <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
             {/* Tidy access buttons */}
             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-              <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-appstore'>
-                <img src={appstore} style={{ height: '2.4em' }} />
+              <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>
+                <p>Beta Access</p>
               </div>
               <div onClick={() => window.open("https://github.com/JasonEllul/Tidy", "_blank")} className='button-github'>
                 <img src={github} style={{ height: '1.2em' }} />

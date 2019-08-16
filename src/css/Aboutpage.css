@@ -114,19 +114,9 @@
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.securcor-pic-1 {
-  position: absolute;
-  top: -50%;
-  left: 0;
-  height: 70%;
-  width: 70%;
-  background-size: contain;
-  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
 .securcor-pic-2 {
   position: absolute;
-  right: 0;
+  right: -26px;
   top: 50%;
   transform: translate(0, -50%);
   height: 50%;
@@ -168,6 +158,7 @@
   text-align: center;
   cursor: pointer;
   overflow: hidden;
+  margin-left: 1.4rem;
 }
 
 .button-appstore {
@@ -176,7 +167,6 @@
   text-align: center;
   cursor: pointer;
   overflow: hidden;
-  margin-right: 1.4rem;
 }
 
 
