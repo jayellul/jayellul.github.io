@@ -12,6 +12,9 @@ import appstore from '../img/appstore.png';
 import motivemap from '../img/motive-map.png';
 import motiveposts from '../img/motive-posts.png';
 
+import tidyhome from '../img/tidy-home.png';
+import tidyfeed from '../img/tidy-feed.png';
+
 import securcorhome from '../img/securcor-home.jpg';
 import securcormission from '../img/securcor-mission.jpg';
 
@@ -19,7 +22,7 @@ class Aboutpage extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { white: false, motive: false, securcor: false };
+    this.state = { white: false, motive: false, tidy: false, securcor: false };
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -46,15 +49,20 @@ class Aboutpage extends Component {
     } else if (this.state.motive && (scrollHeightRatio < 0.85 || scrollHeightRatio > 1.35)) {
       this.setState({ motive: false });
     }
-    if (!this.state.securcor && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
+    if (!this.state.tidy && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
+      this.setState({ tidy: true });
+    } else if (this.state.tidy && (scrollHeightRatio < 1.75 || scrollHeightRatio > 2.25)) {
+      this.setState({ tidy: false });
+    }
+    if (!this.state.securcor && (scrollHeightRatio >= 2.5 && scrollHeightRatio <= 3.25)) {
       this.setState({ securcor: true });
-    } else if (this.state.securcor && (scrollHeightRatio < 1.75 || scrollHeightRatio > 2.25)) {
+    } else if (this.state.securcor && (scrollHeightRatio < 2.5 || scrollHeightRatio > 3.25)) {
       this.setState({ securcor: false });
     }
   }
 
   render() {
-    const { white, motive, securcor } = this.state;
+    const { white, motive, tidy, securcor } = this.state;
     console.log('rerender');
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
@@ -81,12 +89,29 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
-
+        </div>
+        {/* Tidy */}
+        <div className='project-wrapper'>
+          <div className='motive-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+          <div className='motive-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+          <div className='project-text-wrapper rellax2' style={{ opacity: tidy ? 1 : 0, WebkitFilter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
+            <p className='project-title'>Tidy</p>
+            <p className='project-text'>Tidy is an app I created to keep track of chores around the house. You can also send your housemates push notifications to remind them to do their assigned chores.</p>
+            {/* Tidy access buttons */}
+            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+              <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-appstore'>
+                <img src={appstore} style={{ height: '2.4em' }} />
+              </div>
+              <div onClick={() => window.open("https://github.com/JasonEllul/Tidy", "_blank")} className='button-github'>
+                <img src={github} style={{ height: '1.2em' }} />
+              </div>
+            </div>
+          </div>
         </div>
         {/* Securcor */}
         <div className='project-wrapper'>
           <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
-            <p className='project-title'>Securcor.com</p>
+            <p className='project-title'>Securcor</p>
             <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
             {/* Securcor access buttons */}
             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>

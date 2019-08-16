@@ -49,7 +49,7 @@ class Homepage extends Component {
             <div className='text-container'>
               <p className='rellax-0-5 homepage-text'>User interface designer.</p>
               <p className='rellax-1 homepage-text'>Full stack mobile &amp; web developer.</p>
-              <p className='rellax-1-5 homepage-text'>Aspiring SoundCloud artist.</p>
+              <p className='rellax-1-5 homepage-text'>SoundCloud artist.</p>
             </div>
           </div>
         </div>
