@@ -61,7 +61,6 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  margin: 0 5vw;
 }
 
 .project-text-wrapper {
@@ -148,11 +147,12 @@
 .securcor-pic-2 {
   position: absolute;
   right: -26px;
-  top: 25%;
+  top: 50%;
   transform: translate(0, -50%);
-  height: 50%;
-  width: 50%;
+  height: 52%;
+  width: 52%;
   background-size: contain;
+  background-position: center;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 

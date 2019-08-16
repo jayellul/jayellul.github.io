@@ -17,7 +17,7 @@ import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
 
 import securcorhome from '../img/securcor-home.jpg';
-import securcormission from '../img/securcor-mission-laptop.png';
+import securcormission from '../img/securcor-mission.jpg';
 
 class Aboutpage extends Component {
 
@@ -55,9 +55,9 @@ class Aboutpage extends Component {
     } else if (this.state.tidy && (scrollHeightRatio < 1.75 || scrollHeightRatio > 2.25)) {
       this.setState({ tidy: false });
     }
-    if (!this.state.securcor && (scrollHeightRatio >= 2.5 && scrollHeightRatio <= 3.25)) {
+    if (!this.state.securcor && (scrollHeightRatio >= 2.65 && scrollHeightRatio <= 3.25)) {
       this.setState({ securcor: true });
-    } else if (this.state.securcor && (scrollHeightRatio < 2.5 || scrollHeightRatio > 3.25)) {
+    } else if (this.state.securcor && (scrollHeightRatio < 2.65 || scrollHeightRatio > 3.25)) {
       this.setState({ securcor: false });
     }
   }
@@ -72,62 +72,64 @@ class Aboutpage extends Component {
           <a className='aboutpage-contact' style={{ color: white ? '#fff' : '#000' }}>Contact Me</a>
         </div>
         {/* <img className='pic-selfie' src={me}></img> */}
-        {/* Motive */}
-        <div className='project-wrapper'>
-          <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-          <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+        <div style={{ padding: '0 5vw', overflow: 'hidden' }}>
+          {/* Motive */}
+          <div className='project-wrapper'>
+            <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+            <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
 
-          <div className='project-text-wrapper rellax2' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
-            <p className='project-title'>Motive</p>
-            <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
+            <div className='project-text-wrapper rellax2' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
+              <p className='project-title'>Motive</p>
+              <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
                 Other users can then comment on or announce that they are going to the posts.</p>
-            {/* Motive access buttons */}
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-              <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-appstore'>
-                <img src={appstore} style={{ height: '2.4em' }} />
-              </div>
-              <div onClick={() => window.open("https://github.com/JasonEllul/Motive", "_blank")} className='button-github'>
-                <img src={github} style={{ height: '1.2em' }} />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Tidy */}
-        <div className='project-wrapper'>
-          <div className='tidy-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
-          <div className='tidy-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
-          <div className='project-text-wrapper rellax2' style={{ opacity: tidy ? 1 : 0, WebkitFilter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
-            <p className='project-title'>Tidy</p>
-            <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
-            {/* Tidy access buttons */}
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-              <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>
-                <p>Beta Access</p>
-              </div>
-              <div onClick={() => window.open("https://github.com/JasonEllul/Tidy", "_blank")} className='button-github'>
-                <img src={github} style={{ height: '1.2em' }} />
+              {/* Motive access buttons */}
+              <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+                <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-appstore'>
+                  <img src={appstore} style={{ height: '2.4em' }} />
+                </div>
+                <div onClick={() => window.open("https://github.com/JasonEllul/Motive", "_blank")} className='button-github'>
+                  <img src={github} style={{ height: '1.2em' }} />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* Securcor */}
-        <div className='project-wrapper'>
-          <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
-            <p className='project-title'>Securcor</p>
-            <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
-            {/* Securcor access buttons */}
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-              <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
-                <p>Visit Site</p>
-              </div>
-              <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
-                <p>Read More</p>
+          {/* Tidy */}
+          <div className='project-wrapper'>
+            <div className='tidy-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+            <div className='tidy-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+            <div className='project-text-wrapper rellax2' style={{ opacity: tidy ? 1 : 0, WebkitFilter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
+              <p className='project-title'>Tidy</p>
+              <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
+              {/* Tidy access buttons */}
+              <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+                <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>
+                  <p>Beta Access</p>
+                </div>
+                <div onClick={() => window.open("https://github.com/JasonEllul/Tidy", "_blank")} className='button-github'>
+                  <img src={github} style={{ height: '1.2em' }} />
+                </div>
               </div>
             </div>
           </div>
-          {/* Pictures of design */}
-          <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
+          {/* Securcor */}
+          <div className='project-wrapper'>
+            <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
+              <p className='project-title'>Securcor</p>
+              <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
+              {/* Securcor access buttons */}
+              <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+                <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
+                  <p>Visit Site</p>
+                </div>
+                <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
+                  <p>Read More</p>
+                </div>
+              </div>
+            </div>
+            {/* Pictures of design */}
+            <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
+          </div>
         </div>
       </div >
     )
