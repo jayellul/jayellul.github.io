@@ -85,7 +85,7 @@ class Aboutpage extends Component {
         </div>
         {/* Securcor */}
         <div className='project-wrapper'>
-          <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
+          <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Securcor</p>
             <p className='project-text'>Designed and implemented the external website for Securcor Financial Group. </p>
             {/* Securcor access buttons */}

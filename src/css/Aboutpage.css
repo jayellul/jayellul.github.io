@@ -44,7 +44,7 @@
   min-height: 100vh;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 5vw;
 }
 
@@ -81,7 +81,7 @@
 .motive-pic-1 {
   position: absolute;
   right: 15%;
-  bottom: 0;
+  bottom: -10%;
   height: 100%;
   width: 30%;
   background-size: contain;
@@ -90,8 +90,8 @@
 }
 .motive-pic-2 {
   position: absolute;
-  right: 0;
-  bottom: 15%;
+  right: -26px;
+  bottom: -10%;
   height: 100%;
   width: 30%;
   background-size: contain;
