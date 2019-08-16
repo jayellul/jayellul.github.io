@@ -11,6 +11,7 @@ import appstore from '../img/appstore.png';
 
 import motivemap from '../img/motive-map.png';
 import motiveposts from '../img/motive-posts.png';
+import motiveprofile from '../img/motive-profile.png';
 
 import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
@@ -73,8 +74,10 @@ class Aboutpage extends Component {
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
-          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+          <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
           <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+
           <div className='project-text-wrapper rellax2' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
@@ -92,8 +95,8 @@ class Aboutpage extends Component {
         </div>
         {/* Tidy */}
         <div className='project-wrapper'>
-          <div className='motive-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
-          <div className='motive-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+          <div className='tidy-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
+          <div className='tidy-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
           <div className='project-text-wrapper rellax2' style={{ opacity: tidy ? 1 : 0, WebkitFilter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Tidy</p>
             <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
@@ -115,7 +118,7 @@ class Aboutpage extends Component {
             <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
             {/* Securcor access buttons */}
             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-              <div onClick={() => window.open("https://securcor.com", "_blank")} className='button-primary'>
+              <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
                 <p>Visit Site</p>
               </div>
               <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>

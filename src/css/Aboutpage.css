@@ -96,6 +96,37 @@
 
 .motive-pic-1 {
   position: absolute;
+  right: 0;
+  bottom: -10%;
+  height: 100%;
+  width: 30%;
+  background-size: contain;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-delay: 0.4s;
+}
+.motive-pic-2 {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+  height: 100%;
+  width: 22%;
+  background-size: contain;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-delay: 0.2s;
+}
+.motive-pic-3 {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  height: 100%;
+  width: 22%;
+  background-size: contain;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.tidy-pic-1 {
+  position: absolute;
   right: 15%;
   bottom: -10%;
   height: 100%;
@@ -104,7 +135,7 @@
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition-delay: 0.2s;
 }
-.motive-pic-2 {
+.tidy-pic-2 {
   position: absolute;
   right: -26px;
   bottom: -10%;
@@ -117,7 +148,7 @@
 .securcor-pic-2 {
   position: absolute;
   right: -26px;
-  top: 50%;
+  top: 25%;
   transform: translate(0, -50%);
   height: 50%;
   width: 50%;
