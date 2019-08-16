@@ -14,6 +14,10 @@
   background-color: #000;
   z-index: 5;
   padding: 0.2em 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .aboutpage-text {
@@ -26,6 +30,18 @@
   -webkit-text-fill-color: transparent;
   animation: animate-gradient 5s ease infinite; */
   color: #ffffff;
+  transition: color 0.5s ease; 
+}
+
+.aboutpage-contact {
+  font-family: 'inter', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.5s ease; 
+}
+
+.aboutpage-contact:hover {
+  text-decoration: underline;
 }
 
 .pic-selfie {

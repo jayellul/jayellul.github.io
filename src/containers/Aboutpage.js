@@ -59,11 +59,14 @@ class Aboutpage extends Component {
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <div className='aboutpage-text-wrapper'>
-          <p className='aboutpage-text'>Recent Works</p>
+          <p className='aboutpage-text' style={{ color: white ? '#fff' : '#000' }}>Recent Works</p>
+          <a className='aboutpage-contact' style={{ color: white ? '#fff' : '#000' }}>Contact Me</a>
         </div>
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
+          <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+          <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
           <div className='project-text-wrapper rellax2' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
@@ -78,10 +81,7 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
-          <div className='motive-pic-wrapper'>
-            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-            <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-          </div>
+
         </div>
         {/* Securcor */}
         <div className='project-wrapper'>
