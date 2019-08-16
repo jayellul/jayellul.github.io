@@ -60,7 +60,8 @@
 }
 
 .project-text { 
-  font-family: 'tex_gyre_heros', sans-serif;
+  font-family: 'inter', sans-serif;
+  line-height: 1.4;
   color: #4c4d4c;
   font-size: 1.02em;
   text-align: left;
@@ -86,17 +87,15 @@
   background-size: contain;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition-delay: 0.2s;
-  overflow: hidden;
 }
 .motive-pic-2 {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 15%;
   height: 100%;
   width: 30%;
   background-size: contain;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
-  overflow: hidden;
 }
 
 .securcor-pic-1 {
@@ -122,6 +121,8 @@
 
 
 .button-primary {
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
@@ -133,6 +134,8 @@
 }
 
 .button-secondary {
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;

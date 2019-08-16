@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'tex_gyre_heros';
+  src: url('texgyreheros-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tex_gyre_herosbold';
+  src: url('texgyreheros-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

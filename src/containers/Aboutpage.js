@@ -10,7 +10,7 @@ import github from '../img/github.png';
 import appstore from '../img/appstore.png';
 
 import motivemap from '../img/motive-map.png';
-import motiveprofile from '../img/motive-profile.png';
+import motiveposts from '../img/motive-posts.png';
 
 import securcorhome from '../img/securcor-home.jpg';
 import securcormission from '../img/securcor-mission.jpg';
@@ -64,12 +64,12 @@ class Aboutpage extends Component {
         {/* <img className='pic-selfie' src={me}></img> */}
         {/* Motive */}
         <div className='project-wrapper'>
-          <div className='project-text-wrapper' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
+          <div className='project-text-wrapper rellax2' style={{ opacity: motive ? 1 : 0, WebkitFilter: motive ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Motive</p>
             <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
                 Other users can then comment on or announce that they are going to the posts.</p>
             {/* Motive access buttons */}
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 26 }}>
+            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
               <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-appstore'>
                 <img src={appstore} style={{ height: '2.4em' }} />
               </div>
@@ -79,18 +79,17 @@ class Aboutpage extends Component {
             </div>
           </div>
           <div className='motive-pic-wrapper'>
-            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+            <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
           </div>
         </div>
         {/* Securcor */}
         <div className='project-wrapper'>
-          <div className='securcor-pic-1' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
           <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
             <p className='project-title'>Securcor</p>
             <p className='project-text'>Designed and implemented the external website for Securcor Financial Group. </p>
             {/* Securcor access buttons */}
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 26 }}>
+            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
               <div onClick={() => window.open("https://securcor.com", "_blank")} className='button-primary'>
                 <p>Visit Site</p>
               </div>
@@ -100,7 +99,7 @@ class Aboutpage extends Component {
             </div>
           </div>
           {/* Pictures of design */}
-          <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcorhome})`, opacity: securcor ? 1 : 0 }} />
+          <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
         </div>
       </div >
     )
