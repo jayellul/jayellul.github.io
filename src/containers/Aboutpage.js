@@ -17,7 +17,7 @@ import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
 
 import securcorhome from '../img/securcor-home.jpg';
-import securcormission from '../img/securcor-mission.jpg';
+import securcormission from '../img/securcor-mission-shadow.jpg';
 
 class Aboutpage extends Component {
 
@@ -45,9 +45,9 @@ class Aboutpage extends Component {
     const scrollHeightRatio = window.scrollY / window.innerHeight;
     // If is in Motive section
     console.log(scrollHeightRatio);
-    if (!this.state.motive && (scrollHeightRatio >= 0.85 && scrollHeightRatio <= 1.35)) {
+    if (!this.state.motive && (scrollHeightRatio >= 0.9 && scrollHeightRatio <= 1.35)) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (scrollHeightRatio < 0.85 || scrollHeightRatio > 1.35)) {
+    } else if (this.state.motive && (scrollHeightRatio < 0.9 || scrollHeightRatio > 1.35)) {
       this.setState({ motive: false });
     }
     if (!this.state.tidy && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
@@ -116,7 +116,7 @@ class Aboutpage extends Component {
           <div className='project-wrapper'>
             <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
               <p className='project-title'>Securcor</p>
-              <p className='project-text'>Designed and implemented an external website for the Securcor Financial Group. </p>
+              <p className='project-text'>Gave Securcor Financial Group's external website a complete aesthetic and technical redesign.</p>
               {/* Securcor access buttons */}
               <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                 <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
