@@ -6,7 +6,7 @@ import './fonts/inter.css';
 
 import Homepage from './containers/Homepage';
 import Aboutpage from './containers/Aboutpage';
-
+import Profilepage from './containers/Profilepage';
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <Homepage />
       <Aboutpage />
+      <Profilepage />
     </div>
   );
 }

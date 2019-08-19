@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Rellax from 'rellax';
-
 
 import '../css/Aboutpage.css';
 
@@ -114,9 +112,11 @@ class Aboutpage extends Component {
           </div>
           {/* Securcor */}
           <div className='project-wrapper'>
+            {/* Pictures of design */}
+            <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
             <div className='project-text-wrapper rellax2' style={{ opacity: securcor ? 1 : 0, WebkitFilter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
               <p className='project-title'>Securcor</p>
-              <p className='project-text'>Gave Securcor Financial Group's external website a complete aesthetic and technical redesign.</p>
+              <p className='project-text'>Developed a complete aesthetic and technical overhaul for Securcor Financial Group's external website.</p>
               {/* Securcor access buttons */}
               <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                 <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
@@ -127,8 +127,7 @@ class Aboutpage extends Component {
                 </div>
               </div>
             </div>
-            {/* Pictures of design */}
-            <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
+
           </div>
         </div>
       </div >
