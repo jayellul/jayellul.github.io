@@ -15,9 +15,10 @@ class Profilepage extends Component {
     return (
       <div className='profilepage-wrapper'>
         <img className='profilepage-image rellax-1-5' src={me} />
+        {/* <img className='profilepage-image rellax-3' src={me} /> */}
         <div className='profilepage-text-container'>
           <h1 className='profilepage-title'>CLEAN DESIGNS</h1>
-          <h1 className='profilepage-title'>&amp; SIMPLE CODE</h1>
+          <h1 className='profilepage-title'>&amp; CONCISE CODE</h1>
           <p className='profilepage-text' style={{ marginTop: 18 }}>Experienced &amp; passionate individual</p>
           <p className='profilepage-text' style={{ marginBottom: 18 }}>looking for <span>design or development work.</span></p>
           <p className='profilepage-text' style={{ marginTop: 18 }}>Can work alone or alongside your team</p>

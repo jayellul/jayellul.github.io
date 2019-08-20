@@ -14,8 +14,10 @@ function App() {
   return (
     <div className="App">
       <Homepage />
+
       <Aboutpage />
       <Profilepage />
+
     </div>
   );
 }
