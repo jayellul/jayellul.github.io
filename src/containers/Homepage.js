@@ -41,7 +41,7 @@ class Homepage extends Component {
     console.log(this.state);
     return (
       <div className='homepage-wrapper'>
-        <div style={{ background: '#000', position: 'fixed', left: 0, bottom: 0, width: '100vw', height: '50vh' }} />
+        <div style={{ background: '#000', position: 'fixed', left: 0, bottom: 0, width: '100vw', height: '50%' }} />
         <div style={{ height: '100vh', position: 'relative' }}>
           <div style={{ height: '50%', display: 'flex' }}>
             <h1 className='title-name'>JASON ELLUL</h1>

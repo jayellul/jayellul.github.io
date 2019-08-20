@@ -24,10 +24,6 @@ class Profilepage extends Component {
           <p className='profilepage-text' style={{ marginTop: 18 }}>Can work alone or alongside your team</p>
           <p className='profilepage-text' style={{ marginBottom: 18 }}><span>I'm also available for freelance.</span></p>
         </div>
-        <div className='profilepage-footer'>
-          <p className='profilepage-footer-text'>2019 &copy; Jason Ellul</p>
-          <a href='mailto:jason.j.ellul@gmail.com' className='profilepage-footer-text'>Contact me</a>
-        </div>
       </div>
     )
   }

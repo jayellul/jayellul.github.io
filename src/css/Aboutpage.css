@@ -56,7 +56,7 @@
 
 .project-text-wrapper {
   max-width: 700px;
-  padding: 18px 24px;
+  padding: 8px 24px 24px 24px;
   transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: #ffffff;
   box-shadow: 0 0 22px rgb(240,240,240);
@@ -202,40 +202,47 @@
   }  */
   
   .motive-pic-1 {
-    right: 0;
+    transform: translate(-50%, 0%);
+    right: -26px;
     bottom: -10%;
     height: 100%;
     width: 30%;
   }
   .motive-pic-2 {
+    transform: translate(-50%, 0%);
     right: -8%;
     bottom: 0;
     height: 100%;
     width: 20%;
   }
   .motive-pic-3 {
-    right: 26%;
+    transform: translate(-50%, 0%);
+    right: 24%;
     bottom: 0;
     height: 100%;
     width: 20%;
   }
 
   .tidy-pic-1 {
+    transform: translate(0%, 0%);
     right: 12%;
-    bottom: -10%;
-    height: 100%;
+    bottom: 0;
+    height: 85%;
     width: 30%;
+    left: auto;
   }
   .tidy-pic-2 {
+    transform: translate(0%, 0%);
     right: -26px;
-    bottom: -10%;
-    height: 100%;
+    bottom: 0;
+    height: 85%;
     width: 30%;
+    left:auto;
   }
 
   .securcor-pic-2 {
     right: -52px;
-    top: 40%;
+    top: 20%;
     transform: translate(0, -50%);
     height: 100%;
     width: 52%;

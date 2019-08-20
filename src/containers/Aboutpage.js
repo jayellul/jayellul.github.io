@@ -68,7 +68,7 @@ class Aboutpage extends Component {
           <p className='aboutpage-text'>Recent Works</p>
           <a href='mailto:jason.j.ellul@gmail.com' className='aboutpage-contact'>Contact Me</a>
         </div>
-        <div style={{ padding: '0 5vw' }}>
+        <div style={{ padding: '0 5vw', overflow: 'hidden' }}>
           {/* Motive */}
           <div className='project-wrapper'>
             <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />

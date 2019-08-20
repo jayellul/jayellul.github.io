@@ -1,0 +1,33 @@
+.resumepage-wrapper {
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 0 5vw;
+}
+
+
+
+
+
+.resumepage-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.8em 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.resumepage-footer-text {
+  font-family: 'inter', sans-serif;
+  color: #000;
+}

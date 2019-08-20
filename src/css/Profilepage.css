@@ -5,9 +5,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  z-index: 1;
-  overflow: hidden;
+  z-index: 2;
   padding: 0 5vw;
+  overflow: visible;
 }
 
 .profilepage-text-container {
@@ -49,29 +49,11 @@
 }
 
 
-.profilepage-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.8em 5vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  z-index: 3;
-}
-
-.profilepage-footer-text {
-  font-family: 'inter', sans-serif;
-  color: #000;
-}
 
 
 @media (min-width: 1025px) {
   .profilepage-image {
-    top: -40%;
+    top: 0%;
   }
 }
 
