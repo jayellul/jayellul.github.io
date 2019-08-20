@@ -73,7 +73,7 @@ class Aboutpage extends Component {
             <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
-            <div className='rellax' data-rellax-speed="8" data-rellax-percentage="0.5">
+            <div className='rellax' data-rellax-speed="7" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: motive ? 1 : 0, filter: motive ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Motive</p>
                 <p className='project-text'>Motive is a map-based social network I founded where users post events onto a map for their friends and followers to see.
@@ -94,7 +94,7 @@ class Aboutpage extends Component {
           <div className='project-wrapper'>
             <div className='tidy-pic-2' style={{ backgroundImage: `url(${tidyhome})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
             <div className='tidy-pic-1' style={{ backgroundImage: `url(${tidyfeed})`, backgroundPosition: tidy ? 'center bottom' : 'center 100vh', opacity: tidy ? 1 : 0 }} />
-            <div className='rellax' data-rellax-speed="8" data-rellax-percentage="0.5">
+            <div className='rellax' data-rellax-speed="7" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: tidy ? 1 : 0, filter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Tidy</p>
                 <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
@@ -114,7 +114,7 @@ class Aboutpage extends Component {
           <div className='project-wrapper'>
             {/* Pictures of design */}
             <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
-            <div className='rellax' data-rellax-speed="8" data-rellax-percentage="0.5">
+            <div className='rellax' data-rellax-speed="7" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, filter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Securcor</p>
                 <p className='project-text'>Developed a complete aesthetic and technical overhaul for Securcor Financial Group's external website.</p>

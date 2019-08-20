@@ -21,7 +21,11 @@
   font-size: 10vw;
   white-space: nowrap;
   line-height: 1;
+  transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
+.profilepage-text-block {
+  transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .profilepage-text {
