@@ -48,20 +48,14 @@ class Aboutpage extends Component {
     const scrollHeightRatio = window.scrollY / window.innerHeight;
     // If is in Motive section
     console.log(scrollHeightRatio);
-    if (!this.state.motive && (scrollHeightRatio >= 0.9 && scrollHeightRatio <= 1.35)) {
+    if (!this.state.motive && scrollHeightRatio >= 0.9) {
       this.setState({ motive: true });
-    } else if (this.state.motive && (scrollHeightRatio < 0.9 || scrollHeightRatio > 1.35)) {
-      this.setState({ motive: false });
     }
-    if (!this.state.tidy && (scrollHeightRatio >= 1.75 && scrollHeightRatio <= 2.25)) {
+    if (!this.state.tidy && scrollHeightRatio >= 1.75) {
       this.setState({ tidy: true });
-    } else if (this.state.tidy && (scrollHeightRatio < 1.75 || scrollHeightRatio > 2.25)) {
-      this.setState({ tidy: false });
     }
-    if (!this.state.securcor && (scrollHeightRatio >= 2.65 && scrollHeightRatio <= 3.25)) {
+    if (!this.state.securcor && scrollHeightRatio >= 2.65) {
       this.setState({ securcor: true });
-    } else if (this.state.securcor && (scrollHeightRatio < 2.65 || scrollHeightRatio > 3.25)) {
-      this.setState({ securcor: false });
     }
   }
 
@@ -69,13 +63,12 @@ class Aboutpage extends Component {
     const { white, motive, tidy, securcor } = this.state;
     console.log('rerender');
     return (
-      <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
+      <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000', overflowX: 'hidden' }}>
         <div className='aboutpage-text-wrapper' style={{ color: white ? '#fff' : '#000' }}>
           <p className='aboutpage-text'>Recent Works</p>
           <a href='mailto:jason.j.ellul@gmail.com' className='aboutpage-contact'>Contact Me</a>
         </div>
-        {/* <img className='pic-selfie' src={me}></img> */}
-        <div style={{ padding: '0 5vw', overflow: 'hidden' }}>
+        <div style={{ padding: '0 5vw' }}>
           {/* Motive */}
           <div className='project-wrapper'>
             <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />

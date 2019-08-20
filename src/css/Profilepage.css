@@ -13,7 +13,7 @@
 .profilepage-text-container {
   text-align: left;
   margin-top: 5vh;
-  z-index: 3;
+  z-index: 1;
 }
 
 .profilepage-title {
@@ -21,7 +21,7 @@
   font-size: 10vw;
   white-space: nowrap;
   line-height: 1;
-  mix-blend-mode: darken;
+
 }
 
 .profilepage-text {
@@ -38,33 +38,29 @@
   position: absolute;
   right: 5vw;
   top: -20%;
-  height: 50%;
+  height: 45vw;
+  width: 30vw;
   object-fit: contain;
-  object-position: bottom right;
+  object-position: bottom center;
   background: rgb(230,230,230);
   opacity: 0.76;
   box-shadow: -22px -22px #F6BDD1;
-  z-index: 1;
+  z-index: 0;
 }
 
-@media (min-height: 32em) {
-  .profilepage-image {
-    top: 0;
-  }
-}
 
 .profilepage-footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 5;
   padding: 0.8em 5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
+  z-index: 3;
 }
 
 .profilepage-footer-text {
@@ -72,4 +68,10 @@
   color: #000;
 }
 
+
+@media (min-width: 1025px) {
+  .profilepage-image {
+    top: -40%;
+  }
+}
 
