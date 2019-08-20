@@ -37,7 +37,7 @@
 .profilepage-image {
   position: absolute;
   right: 5vw;
-  top: -20%;
+  top: 30%;
   height: 45vw;
   width: 30vw;
   object-fit: contain;
@@ -53,7 +53,7 @@
 
 @media (min-width: 1025px) {
   .profilepage-image {
-    top: 0%;
+    top: 25%;
   }
 }
 

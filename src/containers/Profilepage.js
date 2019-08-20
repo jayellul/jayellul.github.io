@@ -14,7 +14,7 @@ class Profilepage extends Component {
 
     return (
       <div className='profilepage-wrapper'>
-        <img className='profilepage-image rellax-1-5' src={me} />
+        <img className='profilepage-image rellax' data-rellax-speed="-5" data-rellax-percentage="0.5" src={me} />
         {/* <img className='profilepage-image rellax-3' src={me} /> */}
         <div className='profilepage-text-container'>
           <h1 className='profilepage-title'>CLEAN DESIGNS</h1>

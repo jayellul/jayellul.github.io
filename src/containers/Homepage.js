@@ -12,22 +12,15 @@ class Homepage extends Component {
 
   componentDidMount() {
     this.updateWindowDimensions();
-    // Add Rellax to components
-    new Rellax('.rellax1', { speed: 1.0, });
-    new Rellax('.rellax2', { speed: 2, });
-
-    new Rellax('.rellax-0-5', { speed: -0.5, });
-    new Rellax('.rellax-1', { speed: -1.0, });
-    new Rellax('.rellax-1-5', { speed: -1.5, });
-    new Rellax('.rellax-2', { speed: -2, });
-    new Rellax('.rellax-3', { speed: -3, });
-    new Rellax('.rellax-4', { speed: -4, });
-    new Rellax('.rellax-5', { speed: -5, });
-    window.addEventListener('resize', this.updateWindowDimensions);
+    // Add Rellax style to components
+    new Rellax('.rellax', { center: true });
+    // Not centered rellax
+    new Rellax('.rellax-default', {});
+    // window.addEventListener('resize', this.updateWindowDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    // window.removeEventListener('resize', this.updateWindowDimensions);
   }
 
   updateWindowDimensions() {
@@ -48,9 +41,9 @@ class Homepage extends Component {
           </div>
           <div style={{ height: '50%', display: 'flex' }}>
             <div className='text-container'>
-              <p className='rellax-0-5 homepage-text'>User interface designer.</p>
-              <p className='rellax-1 homepage-text'>Full stack mobile &amp; web developer.</p>
-              <p className='rellax-1-5 homepage-text'>SoundCloud artist.</p>
+              <p className='homepage-text rellax-default' data-rellax-speed="-0.5" data-rellax-percentage="0.5">User interface designer.</p>
+              <p className='homepage-text rellax-default' data-rellax-speed="-1.0" data-rellax-percentage="0.5">Full stack mobile &amp; web developer.</p>
+              <p className='homepage-text rellax-default' data-rellax-speed="-1.5" data-rellax-percentage="0.5">SoundCloud artist.</p>
             </div>
           </div>
         </div>
