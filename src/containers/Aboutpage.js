@@ -73,6 +73,7 @@ class Aboutpage extends Component {
             <div className='motive-pic-3' style={{ backgroundImage: `url(${motiveposts})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-2' style={{ backgroundImage: `url(${motiveprofile})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
             <div className='motive-pic-1' style={{ backgroundImage: `url(${motivemap})`, backgroundPosition: motive ? 'center bottom' : 'center 100vh', opacity: motive ? 1 : 0 }} />
+            {/* Rellax container for parallax effect */}
             <div className='rellax' data-rellax-speed="5" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: motive ? 1 : 0, filter: motive ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Motive</p>
@@ -97,7 +98,7 @@ class Aboutpage extends Component {
             <div className='rellax' data-rellax-speed="5" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: tidy ? 1 : 0, filter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Tidy</p>
-                <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates push notifications to remind them to do their assigned chores.</p>
+                <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates friendly reminders in the form of push notifications to remind them to complete their assigned chores.</p>
                 {/* Tidy access buttons */}
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                   <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>

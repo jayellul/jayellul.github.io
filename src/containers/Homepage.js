@@ -11,7 +11,8 @@ class Homepage extends Component {
   }
 
   componentDidMount() {
-    this.updateWindowDimensions();
+    // window.scrollTo(0, 0);
+    // this.updateWindowDimensions();
     // Add Rellax style to components
     new Rellax('.rellax', { center: true });
     // Not centered rellax
@@ -41,9 +42,8 @@ class Homepage extends Component {
           </div>
           <div style={{ height: '50%', display: 'flex' }}>
             <div className='text-container'>
-              <p className='homepage-text rellax-default' data-rellax-speed="-0.5" data-rellax-percentage="0.5">User interface designer.</p>
-              <p className='homepage-text rellax-default' data-rellax-speed="-1.0" data-rellax-percentage="0.5">Full stack mobile &amp; web developer.</p>
-              <p className='homepage-text rellax-default' data-rellax-speed="-1.5" data-rellax-percentage="0.5">SoundCloud artist.</p>
+              <p className='homepage-text rellax-default' data-rellax-speed="-1" data-rellax-percentage="0.5">User interface designer.</p>
+              <p className='homepage-text rellax-default' data-rellax-speed="-2" data-rellax-percentage="0.5">Full stack mobile &amp; web developer.</p>
             </div>
           </div>
         </div>

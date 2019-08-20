@@ -21,11 +21,11 @@
   font-size: 10vw;
   white-space: nowrap;
   line-height: 1;
-  transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.72s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .profilepage-text-block {
-  transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.72s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .profilepage-text {
@@ -41,23 +41,21 @@
 .profilepage-image {
   position: absolute;
   right: 5vw;
-  top: 30%;
+  top: 55%;
   height: 45vw;
   width: 30vw;
   object-fit: contain;
   object-position: bottom center;
   background: rgb(230,230,230);
   opacity: 0.76;
-  box-shadow: -22px -22px #F6BDD1;
+  box-shadow: -10px -10px #F6BDD1;
   z-index: 0;
 }
 
-
-
-
 @media (min-width: 1025px) {
   .profilepage-image {
-    top: 25%;
+    top: 30%;
+    box-shadow: -22px -22px #F6BDD1;
   }
 }
 

@@ -30,6 +30,7 @@
 
 .aboutpage-contact {
   font-family: 'inter', sans-serif;
+  font-weight: 500;
   color: #fff;
   transition: color 0.5s ease; 
 }
@@ -44,10 +45,10 @@
 
 .project-text-wrapper {
   max-width: 700px;
-  padding: 8px 24px 24px 24px;
+  padding: 8px 28px 20px 28px;
   transition: opacity 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), filter 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: #ffffff;
-  box-shadow: 0 0 22px rgb(240,240,240);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   border-radius: 6px;
 }
 
@@ -59,6 +60,7 @@
 
 .project-text { 
   font-family: 'inter', sans-serif;
+  font-weight: 400;
   line-height: 1.4;
   color: #4c4d4c;
   font-size: 1.02em;

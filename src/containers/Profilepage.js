@@ -26,7 +26,7 @@ class Profilepage extends Component {
   }
 
   handleScroll(e) {
-    // If text is in viewport...
+    // If text block is in viewport...
     if (!this.state.title1 && this.title1 && this.title1.getBoundingClientRect().top - window.innerHeight < -200) {
       this.setState({ title1: true });
     }
@@ -55,25 +55,28 @@ class Profilepage extends Component {
             ref={r => this.title1 = r}
             style={{
               opacity: title1 ? 1 : 0,
-              transform: title1 ? 'translateY(0)' : 'translateY(50px)'
-            }}>
-            CLEAN DESIGNS
+              transform: title1 ? 'translateY(0)' : 'translateY(60px)'
+            }}
+          >
+            CLEAN DESIGN
             </h1>
           <h1
             className='profilepage-title'
             ref={r => this.title2 = r}
             style={{
               opacity: title2 ? 1 : 0,
-              transform: title2 ? 'translateY(0)' : 'translateY(50px)'
-            }}>
+              transform: title2 ? 'translateY(0)' : 'translateY(60px)'
+            }}
+          >
             &amp; CONCISE CODE
             </h1>
           <div className='profilepage-text-block'
             ref={r => this.text1 = r}
             style={{
               opacity: text1 ? 1 : 0,
-              transform: text1 ? 'translateY(0)' : 'translateY(50px)'
-            }}>
+              transform: text1 ? 'translateY(0)' : 'translateY(60px)'
+            }}
+          >
             <p className='profilepage-text' style={{ marginTop: 18 }}>Experienced &amp; passionate individual</p>
             <p className='profilepage-text' style={{ marginBottom: 18 }}>looking for <span>design or development work.</span></p>
           </div>
@@ -81,8 +84,9 @@ class Profilepage extends Component {
             ref={r => this.text2 = r}
             style={{
               opacity: text2 ? 1 : 0,
-              transform: text2 ? 'translateY(0)' : 'translateY(50px)'
-            }}>
+              transform: text2 ? 'translateY(0)' : 'translateY(60px)'
+            }}
+          >
             <p className='profilepage-text' style={{ marginTop: 18 }}>Can work alone or alongside your team</p>
             <p className='profilepage-text' style={{ marginBottom: 18 }}><span>I'm also available for freelance.</span></p>
           </div>
