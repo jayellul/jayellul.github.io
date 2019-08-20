@@ -63,7 +63,7 @@ class Aboutpage extends Component {
     const { white, motive, tidy, securcor } = this.state;
     console.log('rerender');
     return (
-      <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000', overflowX: 'hidden' }}>
+      <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <div className='aboutpage-text-wrapper' style={{ color: white ? '#fff' : '#000' }}>
           <p className='aboutpage-text'>Recent Works</p>
           <a href='mailto:jason.j.ellul@gmail.com' className='aboutpage-contact'>Contact Me</a>
