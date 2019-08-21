@@ -52,7 +52,7 @@ class Resumepage extends Component {
               className='resumepage-title'
             >
               GITHUB
-              </a>
+            </a>
           </div>
           <div>
             <a href='https://www.linkedin.com/in/jason-ellul/'
@@ -61,7 +61,7 @@ class Resumepage extends Component {
               className='resumepage-title'
             >
               LINKEDIN
-              </a>
+            </a>
           </div>
           <div>
             <a href='https://stackoverflow.com/users/10153065/hackerman58888'
@@ -70,7 +70,7 @@ class Resumepage extends Component {
               className='resumepage-title'
             >
               STACKOVERFLOW
-              </a>
+            </a>
           </div>
         </div>
         <div className='resumepage-footer'>

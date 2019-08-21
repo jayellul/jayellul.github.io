@@ -8,9 +8,6 @@ import Homepage from './containers/Homepage';
 import Aboutpage from './containers/Aboutpage';
 import Profilepage from './containers/Profilepage';
 
-import Resumepage from './containers/Resumepage';
-
-
 function App() {
 
   return (
@@ -18,7 +15,6 @@ function App() {
       <Homepage />
       <Aboutpage />
       <Profilepage />
-      <Resumepage />
     </div>
   );
 }

@@ -16,7 +16,7 @@ class Homepage extends Component {
     // Add Rellax style to components
     new Rellax('.rellax', { center: true });
     // Not centered rellax
-    new Rellax('.rellax-default', {});
+    new Rellax('.rellax-default', { center: true });
     // window.addEventListener('resize', this.updateWindowDimensions);
   }
 
