@@ -92,6 +92,7 @@ class Profilepage extends Component {
             <p className='profilepage-text' style={{ marginBottom: 18 }}><span>I'm also available for freelance.</span></p>
           </div>
         </div>
+        {/* Put resumepage within this page so that the text can overlap the picture */}
         <Resumepage />
       </div>
     )
