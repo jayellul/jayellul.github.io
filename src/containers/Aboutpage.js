@@ -98,7 +98,7 @@ class Aboutpage extends Component {
             <div className='rellax' data-rellax-speed="5" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: tidy ? 1 : 0, filter: tidy ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Tidy</p>
-                <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates friendly reminders in the form of push notifications to remind them to complete their assigned chores.</p>
+                <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates friendly reminders in the form of push notifications to let them know they need to do some chores.</p>
                 {/* Tidy access buttons */}
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                   <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>

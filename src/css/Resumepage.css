@@ -5,10 +5,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1;
   padding: 0px 5vw;
+  overflow: hidden;
 }
 
 .resumepage-text-container {
@@ -20,11 +21,13 @@
 }
 
 .resumepage-title {
+  display: inline-block;
   position: relative;
   font-family: 'inter', sans-serif;
   font-weight: 200;
   font-size: 3.2em;
   line-height: 1;
+  color: #000;
 }
 
 .resumepage-title:hover {
@@ -39,7 +42,7 @@
   content: '';
   background-color: #F6BDD1;
   position: absolute;
-  height: 80%;
+  height: 60%;
   width: 100%;
   left: 50%;
   top: 50%;

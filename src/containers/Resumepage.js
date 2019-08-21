@@ -38,8 +38,40 @@ class Resumepage extends Component {
             transform: title1 ? 'translateY(0)' : 'translateY(50%)'
           }}
         >
-          <p className='resumepage-text'>I have over <span>8 years of experience</span> in software development.</p>
-          <a className='resumepage-title'>VIEW MY RESUME</a>
+          {/* Add div separators so highlight doesnt span entire width */}
+          <div>
+            <p className='resumepage-text'>I have over <span>8 years of experience</span> in software development.</p>
+          </div>
+          <div>
+            <a className='resumepage-title'>VIEW MY RESUME</a>
+          </div>
+          <div>
+            <a href='https://github.com/JasonEllul'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='resumepage-title'
+            >
+              GITHUB
+              </a>
+          </div>
+          <div>
+            <a href='https://www.linkedin.com/in/jason-ellul/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='resumepage-title'
+            >
+              LINKEDIN
+              </a>
+          </div>
+          <div>
+            <a href='https://stackoverflow.com/users/10153065/hackerman58888'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='resumepage-title'
+            >
+              STACKOVERFLOW
+              </a>
+          </div>
         </div>
         <div className='resumepage-footer'>
           <p className='resumepage-footer-text'>2019 &copy; Jason Ellul</p>
