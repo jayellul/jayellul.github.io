@@ -11,10 +11,8 @@
 
 .resumepage-text-container {
   text-align: left;
-  margin-top: 5vh;
   z-index: 1;
-  transition: all 0.72s cubic-bezier(0.165, 0.84, 0.44, 1);
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .resumepage-title {
@@ -23,7 +21,8 @@
   font-family: 'inter', sans-serif;
   font-weight: 200;
   font-size: 7vw;
-  line-height: 1.1;
+  line-height: 1;
+  margin: 8px 0;
   color: #000;
   white-space: nowrap;
 }
@@ -40,7 +39,7 @@
   content: '';
   background-color: #F6BDD1;
   position: absolute;
-  height: 60%;
+  height: 54%;
   width: 100%;
   left: 50%;
   top: 50%;
@@ -49,20 +48,6 @@
   opacity: 0;
   transition: all 0.46s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-.resumepage-text {
-  font-family: 'inter', sans-serif;
-  font-weight: 500;
-  font-size: 1.52em;  
-  max-width: 800px;
-  padding: 18px 0;
-}
-
-
-.resumepage-text > span {
-  font-weight: 700;
-}
-
 
 .resumepage-footer {
   position: absolute;

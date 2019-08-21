@@ -29,16 +29,16 @@ class Profilepage extends Component {
 
   handleScroll(e) {
     // If text block is in viewport...
-    if (!this.state.title1 && this.title1 && this.title1.getBoundingClientRect().top - window.innerHeight < -200) {
+    if (!this.state.title1 && this.title1 && this.title1.getBoundingClientRect().top - window.innerHeight < -100) {
       this.setState({ title1: true });
     }
-    if (!this.state.title2 && this.title2 && this.title2.getBoundingClientRect().top - window.innerHeight < -200) {
+    if (!this.state.title2 && this.title2 && this.title2.getBoundingClientRect().top - window.innerHeight < -100) {
       this.setState({ title2: true });
     }
-    if (!this.state.text1 && this.text1 && this.text1.getBoundingClientRect().top - window.innerHeight < -200) {
+    if (!this.state.text1 && this.text1 && this.text1.getBoundingClientRect().top - window.innerHeight < -100) {
       this.setState({ text1: true });
     }
-    if (!this.state.text2 && this.text2 && this.text2.getBoundingClientRect().top - window.innerHeight < -200) {
+    if (!this.state.text2 && this.text2 && this.text2.getBoundingClientRect().top - window.innerHeight < -100) {
       this.setState({ text2: true });
     }
   }
