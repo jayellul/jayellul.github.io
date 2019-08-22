@@ -123,7 +123,7 @@
   width: 100%;
 }
 
-.securcor-pic-2 {
+.website-pic-2 {
   position: absolute;
   background-size: contain;
   background-position: center bottom;
@@ -229,7 +229,7 @@
     left:auto;
   }
 
-  .securcor-pic-2 {
+  .website-pic-2 {
     right: -52px;
     top: 20%;
     transform: translate(0, -50%);

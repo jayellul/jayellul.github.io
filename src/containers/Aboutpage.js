@@ -14,8 +14,11 @@ import motiveprofile from '../img/motive-profile.png';
 import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
 
+// GIMP Box Shadow: x: 0, y: 20, color: #000, opacity: 25, blur: 40
 import securcorhome from '../img/securcor-home.jpg';
 import securcormission from '../img/securcor-mission-shadow.jpg';
+
+import hlportfolio from '../img/hl.jpg';
 
 class Aboutpage extends Component {
 
@@ -25,7 +28,8 @@ class Aboutpage extends Component {
       white: window.scrollY > window.innerHeight / 2,
       motive: false,
       tidy: false,
-      securcor: false
+      securcor: false,
+      hl: false,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -47,19 +51,22 @@ class Aboutpage extends Component {
     }
     const scrollHeightRatio = window.scrollY / window.innerHeight;
     // If is in Motive section
-    if (!this.state.motive && scrollHeightRatio >= 0.9) {
+    if (!this.state.motive && scrollHeightRatio >= 0.82) {
       this.setState({ motive: true });
     }
-    if (!this.state.tidy && scrollHeightRatio >= 1.75) {
+    if (!this.state.tidy && scrollHeightRatio >= 1.82) {
       this.setState({ tidy: true });
     }
-    if (!this.state.securcor && scrollHeightRatio >= 2.65) {
+    if (!this.state.securcor && scrollHeightRatio >= 2.82) {
       this.setState({ securcor: true });
+    }
+    if (!this.state.hl && scrollHeightRatio >= 3.82) {
+      this.setState({ hl: true });
     }
   }
 
   render() {
-    const { white, motive, tidy, securcor } = this.state;
+    const { white, motive, tidy, securcor, hl } = this.state;
     console.log('rerender', motive, tidy, securcor);
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
@@ -114,11 +121,12 @@ class Aboutpage extends Component {
           {/* Securcor */}
           <div className='project-wrapper'>
             {/* Pictures of design */}
-            <div className='securcor-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
+            <div className='website-pic-2' style={{ backgroundImage: `url(${securcormission})`, opacity: securcor ? 1 : 0 }} />
             <div className='rellax' data-rellax-speed="5" data-rellax-percentage="0.5">
               <div className='project-text-wrapper' style={{ opacity: securcor ? 1 : 0, filter: securcor ? 'blur(0px)' : 'blur(5px)' }}>
                 <p className='project-title'>Securcor</p>
-                <p className='project-text'>Developed a complete aesthetic and technical overhaul for Securcor Financial Group's external website.</p>
+                {/* <p className='project-text'>Developed a complete aesthetic and technical overhaul for Securcor Financial Group's external website.</p> */}
+                <p className='project-text'>External website for Securcor, a financial group in the securitization industry dedicated to reducing financing costs.</p>
                 {/* Securcor access buttons */}
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
                   <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
@@ -126,6 +134,26 @@ class Aboutpage extends Component {
                   </div>
                   <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
                     <p>Read More</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* HLonHLs */}
+          <div className='project-wrapper'>
+            {/* Pictures of design */}
+            <div className='website-pic-2' style={{ backgroundImage: `url(${hlportfolio})`, opacity: hl ? 1 : 0 }} />
+            <div className='rellax' data-rellax-speed="5" data-rellax-percentage="0.5">
+              <div className='project-text-wrapper' style={{ opacity: hl ? 1 : 0, filter: hl ? 'blur(0px)' : 'blur(5px)' }}>
+                <p className='project-title'>HLonHLs</p>
+                <p className='project-text'>Portfolio website for the sports highlight video editor, highlightonhighlights.</p>
+                {/* Securcor access buttons */}
+                <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+                  <div onClick={() => window.open("http://highlightonhighlights.com", "_blank")} className='button-primary'>
+                    <p>Visit Site</p>
+                  </div>
+                  <div onClick={() => window.open("https://github.com/JasonEllul/editor-portfolio", "_blank")} className='button-github'>
+                    <img src={github} style={{ height: '1.2em' }} />
                   </div>
                 </div>
               </div>
