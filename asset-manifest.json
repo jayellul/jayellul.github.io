@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/personal-portfolio/static/css/main.386fe64b.chunk.css",
+    "main.js": "/personal-portfolio/static/js/main.5616ccb0.chunk.js",
+    "main.js.map": "/personal-portfolio/static/js/main.5616ccb0.chunk.js.map",
+    "runtime~main.js": "/personal-portfolio/static/js/runtime~main.e7e2a907.js",
+    "runtime~main.js.map": "/personal-portfolio/static/js/runtime~main.e7e2a907.js.map",
+    "static/js/2.2fbc81db.chunk.js": "/personal-portfolio/static/js/2.2fbc81db.chunk.js",
+    "static/js/2.2fbc81db.chunk.js.map": "/personal-portfolio/static/js/2.2fbc81db.chunk.js.map",
+    "index.html": "/personal-portfolio/index.html",
+    "precache-manifest.fe981f18e03945ab63d39fa34b0feff3.js": "/personal-portfolio/precache-manifest.fe981f18e03945ab63d39fa34b0feff3.js",
+    "service-worker.js": "/personal-portfolio/service-worker.js",
+    "static/css/main.386fe64b.chunk.css.map": "/personal-portfolio/static/css/main.386fe64b.chunk.css.map",
+    "static/media/inter.css": "/personal-portfolio/static/media/Inter.var.dee04fd5.woff2",
+    "static/media/appstore.png": "/personal-portfolio/static/media/appstore.034593a2.png",
+    "static/media/hl.jpg": "/personal-portfolio/static/media/hl.e5b0d41d.jpg",
+    "static/media/me.png": "/personal-portfolio/static/media/me.5716cd71.png",
+    "static/media/motive-map.png": "/personal-portfolio/static/media/motive-map.36b492f5.png",
+    "static/media/motive-posts.png": "/personal-portfolio/static/media/motive-posts.504e26a3.png",
+    "static/media/motive-profile.png": "/personal-portfolio/static/media/motive-profile.d04d72a2.png",
+    "static/media/securcor-mission-shadow.jpg": "/personal-portfolio/static/media/securcor-mission-shadow.5f7edea3.jpg",
+    "static/media/tex.css": "/personal-portfolio/static/media/texgyreheros-regular-webfont.4b507b01.woff",
+    "static/media/tidy-feed.png": "/personal-portfolio/static/media/tidy-feed.2549db83.png",
+    "static/media/tidy-home.png": "/personal-portfolio/static/media/tidy-home.3d728c5d.png"
+  }
+}
