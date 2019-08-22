@@ -159,6 +159,7 @@ class Aboutpage extends Component {
               </div>
             </div>
           </div>
+          <div style={{ minHeight: '20vh' }} />
         </div>
       </div >
     )
