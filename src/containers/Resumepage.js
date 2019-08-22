@@ -57,7 +57,12 @@ class Resumepage extends Component {
               transform: link1 ? 'translateY(0)' : 'translateY(60px)'
             }}
           >
-            <a className='resumepage-title'>VIEW MY RESUME</a>
+            <a href={process.env.PUBLIC_URL + '/resources/Jason-Ellul-Resume.pdf'}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='resumepage-title'
+            >
+              VIEW MY RESUME</a>
           </div>
           <div
             className='animated-text'

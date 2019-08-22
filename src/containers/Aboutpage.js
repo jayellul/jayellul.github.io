@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import '../css/Aboutpage.css';
 
-import me from '../img/me.png';
-
 import github from '../img/github.png';
 import appstore from '../img/appstore.png';
 
@@ -15,7 +13,6 @@ import tidyhome from '../img/tidy-home.png';
 import tidyfeed from '../img/tidy-feed.png';
 
 // GIMP Box Shadow: x: 0, y: 20, color: #000, opacity: 25, blur: 40
-import securcorhome from '../img/securcor-home.jpg';
 import securcormission from '../img/securcor-mission-shadow.jpg';
 
 import hlportfolio from '../img/hl.jpg';
