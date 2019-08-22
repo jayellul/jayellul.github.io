@@ -105,7 +105,7 @@ class Aboutpage extends Component {
                 <p className='project-text'>Tidy is an app I created to keep track of chores around the house. Send your housemates friendly reminders in the form of push notifications to let them know they need to do some chores.</p>
                 {/* Tidy access buttons */}
                 <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
-                  <div onClick={() => window.open("https://apps.apple.com/us/app/motive/id1448925991", "_blank")} className='button-primary'>
+                  <div onClick={() => window.open("https://testflight.apple.com/join/4RrExVH9", "_blank")} className='button-primary'>
                     <p>Beta Access</p>
                   </div>
                   <div onClick={() => window.open("https://github.com/JasonEllul/Tidy", "_blank")} className='button-github'>
