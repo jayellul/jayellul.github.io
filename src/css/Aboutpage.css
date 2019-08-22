@@ -155,7 +155,7 @@
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
-    color: #000000;
+  color: #000000;
   cursor: pointer;
   padding: 0.4em 0.8em;
 }
@@ -185,10 +185,9 @@
     justify-content: flex-start;
   }
 
-  /* .project-text-wrapper {
-    background-color: transparent;
-    box-shadow: none;
-  }  */
+  .project-text-wrapper {
+    margin-left: -28px;
+  } 
   
   .motive-pic-1 {
     transform: translate(0, 0);
