@@ -64,7 +64,6 @@ class Aboutpage extends Component {
 
   render() {
     const { white, motive, tidy, securcor, hl } = this.state;
-    console.log('rerender', motive, tidy, securcor);
     return (
       <div className='aboutpage-wrapper' style={{ backgroundColor: white ? '#fff' : '#000' }}>
         <div className='aboutpage-text-wrapper' style={{ color: white ? '#fff' : '#000' }}>
