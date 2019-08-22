@@ -1,6 +1,4 @@
-Live version of this site at [ellul.ca](https://ellul.ca)
-
-## Available Scripts
+## Live version of this site at [ellul.ca](https://ellul.ca)
 
 In the project directory, you can run:
 
