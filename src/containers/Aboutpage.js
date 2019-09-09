@@ -128,7 +128,7 @@ class Aboutpage extends Component {
                   <div onClick={() => window.open("http://securcor.com", "_blank")} className='button-primary'>
                     <p>Visit Site</p>
                   </div>
-                  <div onClick={() => window.open("coop", "_blank")} className='button-secondary'>
+                  <div onClick={() => window.open("https://jasonellul.github.io/coop-reports/")} className='button-secondary'>
                     <p>Read More</p>
                   </div>
                 </div>
