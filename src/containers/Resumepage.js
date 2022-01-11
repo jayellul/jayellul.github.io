@@ -82,7 +82,7 @@ class Resumepage extends Component {
               rel="noopener noreferrer"
               className="resumepage-title"
             >
-              VIEW MY RESUME
+              MY RESUME
             </a>
           </div>
           <div
