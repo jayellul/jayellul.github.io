@@ -77,9 +77,7 @@ class Resumepage extends Component {
             }}
           >
             <a
-              href={
-                process.env.PUBLIC_URL + "/resources/Jason-Ellul-Resume.pdf"
-              }
+              href={process.env.PUBLIC_URL + "/resources/Jay-Ellul-Resume.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="resumepage-title"
