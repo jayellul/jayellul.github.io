@@ -73,10 +73,7 @@ class Aboutpage extends Component {
           style={{ color: white ? "#fff" : "#000" }}
         >
           <p className="aboutpage-text">Recent Works</p>
-          <a
-            href="mailto:jason.j.ellul@gmail.com"
-            className="aboutpage-contact"
-          >
+          <a href="mailto:jellul146@gmail.com" className="aboutpage-contact">
             Contact Me
           </a>
         </div>

@@ -17,7 +17,7 @@
 }
 
 .profilepage-title {
-  font-family: 'tex_gyre_herosbold', sans-serif;
+  font-family: "tex_gyre_herosbold", sans-serif;
   font-size: 10vw;
   white-space: nowrap;
   line-height: 1;
@@ -29,9 +29,9 @@
 }
 
 .profilepage-text {
-  font-family: 'inter', sans-serif;
+  font-family: "inter", sans-serif;
   font-weight: 500;
-  font-size: 1.52em;  
+  font-size: 1.52em;
 }
 
 .profilepage-text > span {
@@ -44,18 +44,17 @@
   top: 55%;
   height: 45vw;
   width: 30vw;
-  object-fit: contain;
-  object-position: bottom center;
-  background: rgb(230,230,230);
+  object-fit: cover;
+  object-position: center;
+  background: rgb(230, 230, 230);
   opacity: 0.76;
-  box-shadow: -10px -10px #F6BDD1;
+  box-shadow: -10px -10px #f6bdd1;
   z-index: 0;
 }
 
 @media (min-width: 1025px) {
   .profilepage-image {
     top: 30%;
-    box-shadow: -22px -22px #F6BDD1;
+    box-shadow: -22px -22px #f6bdd1;
   }
 }
-
