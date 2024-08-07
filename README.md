@@ -19,6 +19,3 @@ The build is minified and the filenames include the hashes.<br>
 Builds the app for production to the `build` folder and then pushes the `build` folder to the `gh-pages` branch.<br>
 
 The `gh-pages` branch is setup to serve this website as a Github Pages project page.
-
-Designed and programmed by Jason Ellul. 
-
